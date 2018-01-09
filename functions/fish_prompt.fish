@@ -3,10 +3,11 @@ function _color
 end
 
 function fish_prompt
-  set name (_color 3 $USER)
-  set hostname (string replace -r '\..+$' '' (hostname))
-  set hostname (_color 31 $hostname)
+  #set name (_color 3 $USER)
+  #set hostname (string replace -r '\..+$' '' (hostname))
+  #set hostname (_color 31 $hostname)
   set prompt (_color 2 (string replace "$HOME" '~' (pwd)))" \$ "
-  echo $name on $hostname
-  echo $prompt
+  set name (_color 31 "[$USER]")
+  #echo $name on $hostname
+  echo $name $prompt
 end
