@@ -1,5 +1,5 @@
-function la --wraps ls
+function la --wraps ls --description 'alias la=ls -lah --color'
   set -l LC_COLLATE C
-  ls -lahG $argv
+  ls -lah --color $argv
 end
 
