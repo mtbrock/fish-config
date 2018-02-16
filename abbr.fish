@@ -16,3 +16,4 @@ abbr -a vi '/usr/bin/env vim'
 abbr -a so source
 abbr -a pacsave 'pacman -Qqe > ~/maintenance/pkglist.txt'
 abbr -a pacr 'sudo pacman -Rs'
+abbr -a x exit
