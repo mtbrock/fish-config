@@ -1,0 +1,1 @@
+/home/matt/.config/fisherman/fasd/completions/zz.fish

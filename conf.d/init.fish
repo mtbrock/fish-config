@@ -18,7 +18,15 @@ set -xg LESSHISTFILE "$CACHE_HOME/lesshst"
 set -xg VISUAL 'nvim'
 set -xg EDITOR "$VISUAL"
 
+# For building AOSP
+set -xg USE_CCACHE 1
+set -xg CCACE_DIR ~/.cache/ccache
+set -xg ANDROID_JACK_VM_ARGS "-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
+
+set -xg JAVA_HOME /usr/lib/jvm/java-8-openjdk
+
 #---------------------------------------------
 # PATH modifications
 #---------------------------------------------
-test -z $TMUX; and set PATH ~/.local/bin $PATH
+#test -z $TMUX; and set PATH ~/.local/bin ~/android/platform-tools $PATHtest -d ~/android/platform-tools; and set PATH ~/android/platform-tools $PATH
+test -z $TMUX; and test -n init_path; and init_path
