@@ -1,1 +1,0 @@
-/home/matt/.config/fisherman/thefuck/init.fish
