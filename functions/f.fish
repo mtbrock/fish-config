@@ -1,1 +1,0 @@
-/home/matt/.config/fisherman/fasd/functions/f.fish
