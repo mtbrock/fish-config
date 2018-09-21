@@ -1,6 +1,9 @@
 # Setup term for colors
 #set -xg TERM xterm-256color
 
+#test -n $INIT_DONE; and echo fuck you; and exit 0
+test -n "$INIT_DONE"; and exit 0
+
 # Data directory
 set -xg XDG_DATA_HOME ~/.local/share
 set -xg XDG_DATA_DIRS "/usr/local/share:/usr/share"
@@ -28,5 +31,6 @@ set -xg JAVA_HOME /usr/lib/jvm/java-8-openjdk
 #---------------------------------------------
 # PATH modifications
 #---------------------------------------------
-#test -z $TMUX; and set PATH ~/.local/bin ~/android/platform-tools $PATHtest -d ~/android/platform-tools; and set PATH ~/android/platform-tools $PATH
-test -z $TMUX; and test -n init_path; and init_path
+set PATH ~/bin ~/.local/bin ~/android/platform-tools ~/gcloud/sdk/bin $PATH
+
+set -xg INIT_DONE 'yes'
