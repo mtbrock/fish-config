@@ -1,7 +1,6 @@
 # All abbreviations here are (pretty) agnostic. Abbreviations for specific
 # machines are kept in their own files.
 if not set -q _abbrs_initialized
-  echo -n Setting abbreviations...
 
   # misc
   abbr -a -U -- sudovi sudoedit
@@ -36,5 +35,4 @@ if not set -q _abbrs_initialized
   abbr -a -U -- syu 'sudo pacman -Syu'
 
   set -gx _abbrs_initialized
-  echo 'Done'
 end
