@@ -28,6 +28,8 @@ set -xg ANDROID_JACK_VM_ARGS "-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4
 
 set -xg JAVA_HOME /usr/lib/jvm/java-8-openjdk
 
+set -xg ANSIBLE_ROLES_PATH ~/work/ansible-roles
+
 #---------------------------------------------
 # PATH modifications
 #---------------------------------------------
